@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styleindex.css">
+
+    <title>EjerciciosEventos</title>
+</head>
+<body>
+    <header class="flex flex-row justify-center">
+        <h1 class="text-3xl font-bold text-purple-800 text-center mt-11 bg-orange-300 inline-block rounded-full p-7">Ejercicios de Eventos</h1>
+    </header>
+    <main>
+        <div class="ejercicio1">
+
+        </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+        <div id="ejercicio2" class=" w-full flex flex-row justify-center mt-10">
+            <div class="border border-black w-[400px] h-[500px] flex flex-col items-center bg-[#77dd77]">
+                <div id="cuadroDeTexto" class="w-[90%] h-[70%] border border-black mt-4 text-[20px] font-bold font-[cursive] bg-[#d8f8e1] text-center" >
+
+                </div>
+                <p>
+                    <label for="texto" class="text-[30px]">Texto</label>
+                    <input id="inputTexto" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl" type="text">
+                </p>
+                <button id="buttonReset" class="text-[40px] border border-black rounded-[41px] p-[11px] bg-orange-300 mt-8">Reset</button>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div id="ejercicio3" class=" w-full flex flex-row justify-center mt-10">
+            <div class="border border-black w-[400px] h-[400px] flex flex-col bg-[#fdfd96]">
+                <div class="ml-11 mt-11">
+                    <p>
+                        <label for="" class="text-[30px]">Estatura</label><br>
+                        <fieldset>
+                            <label for="">en centimetros <br>
+                                <input id="inputCentimetros" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3" type="number">
+                            </label>
+                        </fieldset>
+                        
+                    </p>
+                    <p>
+                        <label for="" class="text-[30px]">Peso</label><br>
+                        <fieldset>
+                            <label for="">en kilogramos <br>
+                                <input id="inputKilogramos" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3" type="number">
+                            </label>
+                        </fieldset>
+                    </p>
+                    <button id="buttonCalculate" class="text-[40px] border border-black rounded-[41px] p-[11px] bg-orange-300 mt-8">Calculate</button>
+                </div>
+            </div>
+            <div class="border border-black w-[350px] h-[200px] flex flex-col items-center bg-[#fdfd96] ml-11">
+                <div class="ml-[-28px] mt-11">
+                    <h1 class="text-[30px]">Resultado</h1>
+                    <p>su indice de masa corporal</p>
+                    <div id="divResultadoMasaCorporal" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3 bg-slate-300">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div id="ejercicio4" class=" w-full flex flex-row justify-center mt-10">
+            <div class="border border-black w-[400px] h-[400px] flex flex-col bg-[#84b6f4]">
+                <div class="ml-11 mt-11">
+                    <p>
+                        <label for="" class="text-[30px]">Monto moneda local</label><br>
+                        <fieldset>
+                            <label for="">sin comas ni puntos <br>
+                                <input id="inputValorEnMonedaLocal" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3" type="number">
+                            </label>
+                        </fieldset>
+                        
+                    </p>
+                    <h1 class="text-[22px]">El equivalente en dolares de su moneda es: </h1>
+                    <div id="divEquivalenteEnDolares" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3 bg-slate-300">
+
+                    </div>
+                    <button id="buttonConverDolareas" class="text-[40px] border border-black rounded-[41px] p-[11px] bg-orange-300 mt-4">Convert</button>
+                </div>
+            </div>
+            <div class="border border-black w-[400px] h-[400px] flex flex-col bg-[#84b6f4] ml-9">
+                <div class="ml-11 mt-11">
+                    <p>
+                        <label for="" class="text-[30px]">Monto en dolares</label><br>
+                        <fieldset>
+                            <label for="">sin comas ni puntos <br>
+                                <input id="inputValorDolares" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3" type="number">
+                            </label>
+                        </fieldset>
+                        
+                    </p>
+                    <h1 class="text-[20px]">El equivalente de la cantidad en dolares ingresada en moneda local es:  </h1>
+                    <div id="divEquivalenteEnMonedaLocal" class="border border-black w-[220px] h-[38px] text-[20px] rounded-2xl pl-3 bg-slate-300">
+
+                    </div>
+                    <button id="buttonConvertMonedaLocal" class="text-[40px] border border-black rounded-[41px] p-[11px] bg-orange-300 mt-4">Convert</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
